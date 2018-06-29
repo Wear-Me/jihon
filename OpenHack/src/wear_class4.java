@@ -1,8 +1,16 @@
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
 import java.io.File;
-import java.awt.*;
-import javax.swing.*;
-import java.util.*;
-public class wear_class extends JFrame {
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.border.EmptyBorder;
+
+public class wear_class4 extends JFrame {
+	//21~25
 	File []list;
 	File path;
 	public ImageIcon img1;
@@ -12,13 +20,11 @@ public class wear_class extends JFrame {
 	private JTextField textField;
 	private JTextField textField_1;
 	private JTextField textField_2;
-	public static void main(String[] args) {
-		wear_class f = new wear_class();
-			
-	}
+	wear_class4 f;
 
 
-	public wear_class() {
+	public wear_class4() {
+		f= new wear_class4();
 		Render();
 	}
 	public void Render()
@@ -78,4 +84,5 @@ public class wear_class extends JFrame {
 		 path = new File("./image//Style//");
 		 list = path.listFiles();	
 	}
+
 }
